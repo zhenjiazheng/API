@@ -1,0 +1,22 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/investRecord/0?page=1&limit=20",
+			"headers":{"client": "lj_android",
+                        "Content-Type": "application/json",
+                         "token": "{{key.token}}"
+				}
+
+	},
+  "output":{"code": {"ALLIN":[0,"1234"]},"msg":{"TYPE":"str"},"data":{"TYPE":"dict"},
+    "count":{"TYPE":"int"},"totalpage":{"TYPE":"int"},"hasNext":{"TYPE":"bool"},
+    "currPage":{"TYPE":"int"},"total":{"TYPE":"int"},"investId":{"TYPE":"int"},
+    "tenderName":{"TYPE":"str"},"paymentMoney":{"TYPE":"float"},"tenderBorrowTime":{"TYPE":"str"},
+    "paymentInterest":{"TYPE":"float"},"investTime":{"TYPE":"str"},"tenderRate":{"TYPE":"str"},
+    "protocol_path":{"TYPE":"str"},"investMonth":{"TYPE":"str"},"investMoney":{"TYPE":"int"},
+    "tenderType":{"TYPE":"int"},"tendId":{"TYPE":"int"},"reward":{"TYPE":"float"},
+    "service_money":{"TYPE":"float"}}
+
+}

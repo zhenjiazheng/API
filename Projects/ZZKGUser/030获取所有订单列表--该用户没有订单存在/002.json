@@ -1,0 +1,22 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "ja/user/v3/order",
+		"headers": {
+			"token": "{{key.token}}",
+			"region":6
+		},
+		"param": {"key":"", "limit":10, "page": 10}
+	},
+	"output": {
+		"msg": {"EQ":"成功"},
+    	"data": {"TYPEIN":["list","dict"]},
+        "count": {"EQ":0},
+        "totalpage": {"EQ":0},
+        "hasNext": {"EQ":false},
+        "currPage": {"EQ":0},
+        "total": {"EQ":0},
+    	"statusCode": {"EQ":0}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"http://v.xiumi.us/board/v5/2ylc2/7663321",
+			"rest": ""
+	},
+  "output":{"RE":"^<!DOCTYPE html>([\\s\\S]*)</html>$", "NF":"class=\"status text-center\">404"}
+}

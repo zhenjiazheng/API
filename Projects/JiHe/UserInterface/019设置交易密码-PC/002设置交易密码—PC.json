@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/pc/initPayPwd",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+       "param": {
+       "pwd":"123456","confirmPwd":"123456"
+     }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"设置成功"}}
+
+}

@@ -1,0 +1,17 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/test/sms/idcard?",
+			"headers":{"client": "lj_android",
+                        "Content-Type": "application/json"
+				},
+			"param":{
+				"phone":"{{pre.JRUser}}", "code": "1234"
+			}
+	},
+  "output":{"code": {"ALLIN":[0,"1234"]},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"},"data.code":{"EQ":"1234"}},
+  "key":{"id":"data.code"}
+
+}

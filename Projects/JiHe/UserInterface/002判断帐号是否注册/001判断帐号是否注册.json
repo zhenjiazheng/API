@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/regist",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "name":"{{pre.JRUser}}"
+     }
+    },
+
+    "output":{"code":{"ALLIN":[0,1,2]},"msg":{"TYPE":"str"}}
+
+}

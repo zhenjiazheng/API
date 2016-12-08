@@ -1,0 +1,15 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.jh_url}}",
+    "rest":"/ja/v1/test/sms/regist?",
+    "headers":{"client": "3",
+                        "Content-Type": "application/json"
+				},
+			"param":{
+				"phone":"{{pre.User4}}","code":1234
+			}
+	},
+  "output":{"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"} },
+  "key":{"id1":"data.code"}
+}

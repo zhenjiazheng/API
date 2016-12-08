@@ -1,0 +1,16 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.zzkg_merchant_release_url}}",
+    "rest":"/py/erp/v1/supply/supplier_goods/?supplier_id={{key.id0}}",
+    "headers":{"token":"{{key.token}}"},
+    "param":{
+
+     }
+  },
+  "output":{
+    "statusCode":{"EQ":0},
+    "msg":{"TYPE":"str"}
+  },
+   "key":{"id1":"data.1.id"}
+}

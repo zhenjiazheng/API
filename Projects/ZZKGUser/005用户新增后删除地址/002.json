@@ -1,0 +1,4 @@
+{
+	"sql":["select id from so2o_region where status = 0 limit 1"],
+	"key":["id1"]
+}

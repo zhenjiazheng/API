@@ -1,0 +1,9 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/v3/entry/withdraw/get",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{"statusCode":{"EQ":0},"data":{"TYPE":"dict"},"balance":{"TYPE":"str"},"bank_logo":{"TYPE":"str"},"bank_name":{"TYPE":"str"},"bankcard_no": {"TYPE":"str"}}
+}

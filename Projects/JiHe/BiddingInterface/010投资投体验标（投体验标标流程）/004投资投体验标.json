@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/invest/tender/experinece",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "tenderId":"{{key.id1}}", "couponId":"{{key.id2}}"
+     }
+    },
+
+    "output":{"code":{"ALLIN":[0,1]},"msg":{"TYPE":"str"}}
+
+}

@@ -1,0 +1,13 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/setting/share/counts",
+		"headers": {
+			"token": "{{key.token}}"
+		}
+	},
+	"output": {
+		"counts": {"EQ":"0"}
+	}
+}

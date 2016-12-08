@@ -1,0 +1,15 @@
+{
+   "input":{
+    "method":"GET",
+    "url":"{{pre.jh_url}}",
+    "rest": "/ja/v1/setAndHelp/home/",
+    "headers":{"client":"3"}
+  },
+  "output":{
+  "code":{"EQ":0},
+  "msg": {"EQ":"成功"},
+  "data": {"TYPE":"dict"},
+    "weixinNo":{"EQ":"几何金融"},
+    "consumerHotline":{"EQ":"4001338998"}
+  }
+}

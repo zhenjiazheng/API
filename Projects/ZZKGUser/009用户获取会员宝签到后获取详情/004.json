@@ -1,0 +1,15 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v3/memberbao/signin",
+		"headers": {
+			"token": "{{key.token}}"
+		}
+	},
+	"output": {
+		"statusCode": {"EQ":0},
+		"msg": {"EQ":"签到成功！"},
+		"success": {"EQ":true}
+	}
+}

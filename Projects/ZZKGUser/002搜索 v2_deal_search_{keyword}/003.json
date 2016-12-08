@@ -1,0 +1,16 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/deal/search/商品",
+		"headers": {
+			"region": 4,
+			"token": "{{key.token}}"
+		},
+		"param":{"limit":5, "page":2}
+	},
+  "output": {
+	  "count": {"EQ":5},
+	  "data": {"type":"list"}
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"input":{
+			"method":"GET",
+			"url":"{{pre.jh_url}}",
+			"rest":"/ja/v1/home",
+			"headers":{
+				"client":"3",
+                "Content-Type":"application/json",
+				"token":"{{key.token}}"
+			}
+			
+	},
+	"output":{
+		"code":{"EQ":0},"data":{"TYPE":"dict"},
+		"banners":{"TYPE":"dict"},"articles":{"TYPE":"dict"},"tender":{"TYPE":"dict"},
+		"msgFlag":{"ALLIN":[0,1]},"floating_banner":{"EQ":null},"is_login":{"TYPE":"bool"},
+		"msg":{"TYPE":"str"}
+
+	},
+	"key": {"id":"data.tender.id"}
+} 

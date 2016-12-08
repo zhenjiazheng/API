@@ -1,0 +1,20 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/message",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"获取进度成功"},"data":{"TYPE":"dict"},
+      "regist":{"TYPE":"bool"},"idcard":{"TYPE":"bool"},"bankcard":{"TYPE":"bool"},
+      "idcard_status":{"TYPE":"int"},"weChat":{"TYPE":"bool"},"bankcard":{"TYPE":"bool"},
+      "pay_password":{"TYPE":"bool"},"email":{"TYPE":"bool"}}
+
+}
+

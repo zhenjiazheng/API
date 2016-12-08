@@ -1,0 +1,22 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "ja/user/v3/dyn/share/content/MEMBER_SHARE_CONTENT",
+		"headers": {
+			"token": "{{key.token}}"
+		},
+		"params":{"limit":20,
+				"page":1}
+	},
+	"output": {
+		"statusCode": {"EQ":0},
+		"msg": {"TYPE":"str"},
+		"key": {"EQ":"MEMBER_SHARE_CONTENT"},
+		"title": {"EQ":"会员宝-会赚钱"},
+		"content": {"EQ":"会员宝-会赚钱"},
+		"iconUrl": {"RE":"http://[\\s\\S]*.png"},
+		"link": {"EQ":"http://release.thy360.com/o2o_weixin/h5/wx_recommend/memberBao.html?introducerCode=100106"},
+		"success": {"EQ":true}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "/py/dealer/v4/supplier/seller/permission/get/",
+			"headers": ""
+	},
+  "output":{ "msg": {"EQ":"用户未授权"},"errorCode":{"EQ":401}
+  }
+}

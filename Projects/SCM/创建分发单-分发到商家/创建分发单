@@ -1,0 +1,19 @@
+{
+  "input": {
+    "method": "POST",
+    "url": "{{pre.zzkg_merchant_release_url}}",
+    "rest": "py/erp/v1/supply/dispatch/",
+    "headers": {
+      "token": "{{key.token}}",
+      "appid": ""
+    },
+    "param": {
+    "entry_order":"{{key.id4}}",
+      "goods":[{"supplier_id":950743,"entry_goods":{{key.id5}},"trade_price":"20","retail_price":"20","count":10}],"status":3}
+
+    },
+  "output":{
+    "msg":{"TYPE":"str"},
+    "statusCode":{"EQ":0}
+}
+}

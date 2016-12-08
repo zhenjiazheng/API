@@ -1,0 +1,9 @@
+ {
+	"redis":{
+		"set":{ "key1": "value2","key2": "value3"},
+		"size": null,
+		"get":["key1","key2"],
+		"delete":"key1"
+	},
+	"key": ["key2"]
+}

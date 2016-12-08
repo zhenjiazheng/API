@@ -1,0 +1,17 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "/ja/v1/tender/{{key.id3}}",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"TYPE":"str","EQ":"获取成功"}},
+    "key":["rate2","borrow_time2"]
+
+}

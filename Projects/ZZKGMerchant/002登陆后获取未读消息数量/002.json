@@ -1,0 +1,10 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "/py/dealer/v4/dealer/message/count/",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{ "count": {"TYPE":"int"}
+  }
+}

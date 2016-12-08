@@ -1,0 +1,16 @@
+{
+	"input": {
+		"method": "POST",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/setting/offline_pay/password",
+		"headers": {
+			"token": "{{key.token}}",
+			"region":10
+		},
+		"param":{"password":""}
+	},
+	"output": {
+		"msg": {"EQ":"密码格式错误，请重新输入"},
+		"statusCode": {"eq":1}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/deal/category/{{key.id}}/",
+		"headers": {
+			"region": 4
+		}
+	},
+  "output": {
+	      "count": {"TYPE":"int"},
+		"totalpage": {"TYPE":"int"},
+		"hasNext": {"TYPE":"bool"},
+		"currPage": {"TYPE":"int"},
+		"total": {"TYPE":"int"},
+		"data": {"TYPE":"list"}
+  },
+	"key":{"id":"data.0.deal_id"}
+}

@@ -1,0 +1,17 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/extend",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"获取成功"},"data":{"TYPE":"dict"},
+      "is_borrow":{"TYPE":"bool"},"use_amount":{"TYPE":"float"}}
+
+}

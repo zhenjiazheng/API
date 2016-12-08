@@ -1,0 +1,14 @@
+{
+  "input":{
+    "method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/idcard/bind/check",
+			"headers":{
+				"token":"{{key.token}}","client":"3"
+			},
+    "param":{
+        "name":"jackyyyy","idno":"2323323","pictures":["{{key.data}}"]
+    },
+    "output":{"code":{"EQ":1},"msg":{"EQ":"您的证件信息已提交，请耐心等待审核结果！"}}
+  }
+}

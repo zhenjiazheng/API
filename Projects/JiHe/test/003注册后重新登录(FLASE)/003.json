@@ -1,0 +1,15 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/regist",
+			"param":{
+				"name":"{{pre.User1}}", "code": "1234", "password": "test123456"
+			}
+	},
+  "output":{"code": {"EQ":1}, "msg":{"TYPE":"str"}, "data":{"TYPE":"dict"}, "uid": {"TYPE":"int"},
+	  "phone": {"EQ":"{{pre.User1}}"}, "addtime":{"TYPE":"str"}, "name": {"TYPE":"str"}, "token": {"TYPE":"str"},
+	  "username": {"TYPE":"str"}, "idcard": {"TYPE":"bool"}, "idcard_status": {"EQ":1},
+	  "pay_password": {"TYPE":"bool","EQ":false}, "bankcard": {"TYPE":"bool","EQ":false}},
+  "key":["uid"]
+}

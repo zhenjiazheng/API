@@ -1,0 +1,17 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/account/borrow/register",
+			"headers":{"client": "3",
+                        "Content-Type": "application/json",
+				"token":"{{key.token}}"
+				},
+      "param": {
+        "name": "李兰珍","idno":"420983199310242822","code":"{{key.id}}"
+      }
+	},
+  "output":{"code":{"EQ":0},"msg":{"TYPE":"str"} }
+
+}

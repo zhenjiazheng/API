@@ -1,0 +1,9 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/idcard/bind/status",
+			"headers": {"token":"{{key.token}}"}
+	},
+  "output":{"code": {"EQ":0}, "idcard_status":{"EQ":1}}
+}

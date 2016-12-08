@@ -1,0 +1,39 @@
+{
+	"input": {
+		"method": "get",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/dealers",
+		"headers": {
+			"region": 4
+		},
+		"param": {
+			"orderby":"0",
+			"asc": true,
+			"latitude":114.123456,
+			"longitue":22.123456,
+			"page":1,
+			"limit":10}
+	},
+  "output": {
+	  	"count": {"type":"int"},
+		"totalpage": {"type":"int"},
+		"hasNext": {"type":"bool"},
+		"currPage": {"type":"int"},
+		"total": {"type":"int"},
+		"data": {"type":"list"},
+		"status": {"type":"int"},
+		"businessType": {"type":"int"},
+		"endTime": {"type":"str"},
+		"name": {"type":"str"},
+		"pic": {"type":"str"},
+		"dealerOpenStatus": {"type":"int"},
+		"startTime": {"type":"str"},
+		"address": {"type":"str"},
+		"fullFreeFee": {"type":"float"},
+		"deliverFee": {"type":"float"},
+		"type": {"type":"int"},
+		"id": {"type":"int"},
+		"desc": {"type":"str"}
+  },
+	"key":{"dealer_id":"data.0.id"}
+}

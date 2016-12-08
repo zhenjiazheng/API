@@ -1,0 +1,11 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "/ja/v1/user/login/info",
+			"param":{
+				"name":"{{pre.User1}}"
+			}
+	},
+  "output":{"code": {"EQ":0}, "u'headImg":{"TYPE":"str"}}
+}

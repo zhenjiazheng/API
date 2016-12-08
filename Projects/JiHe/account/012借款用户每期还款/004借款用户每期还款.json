@@ -1,0 +1,17 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/account/borrow/payOffTheLoan",
+			"headers":{"client": "3",
+                        "Content-Type": "application/json",
+				"token":"{{key.token}}"
+				},
+      "param": {
+        "tenderRepaymentId": "{{key.id4}}","money":"10000"
+      }
+	},
+   "output":{"code":{"EQ":0},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"}}
+
+}

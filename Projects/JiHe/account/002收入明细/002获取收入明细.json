@@ -1,0 +1,15 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/account/already/income?page=1&limit=20&month=1",
+			"headers":{"client": "3",
+                        "Content-Type": "application/json",
+				"token":"{{key.token}}"
+			}
+
+	},
+  "output":{"code":{"EQ":0},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"}}
+
+}

@@ -1,0 +1,16 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/account/borrow/myBill",
+			"headers":{"client": "3",
+                        "Content-Type": "application/json",
+				"token":"{{key.token}}"
+				}
+
+	},
+  "output":{"code":{"EQ":0},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"}},
+  "key":{"id":"data.simpleTenderRepayments.0.tenderId"}
+
+}

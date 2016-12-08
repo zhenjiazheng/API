@@ -1,0 +1,17 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.zzkg_merchant_url}}",
+    "rest":"/py/erp/v1/supply/supplier_goods/?supplier_id=12",
+    "headers":{"token":"{{key.token}}"},
+    "param":{
+
+     }
+  },
+  "output":{
+    "satusCode":{"EQ":0},
+    "msg":{"TYPE":"str"},
+    "barcode":{"ALLIN":"120413"}
+
+  }
+}

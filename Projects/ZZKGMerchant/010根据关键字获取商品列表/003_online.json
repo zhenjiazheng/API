@@ -1,0 +1,9 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/v4/so2o/product/list/{{key.id1}}/?page=1&limit=10&type=0",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{}
+}

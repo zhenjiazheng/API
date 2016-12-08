@@ -1,0 +1,18 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/v4/supplier/index/",
+			"headers":{"token":"{{key.dealer_token}}"},
+		"params":{}
+	},
+  "output":{"msg": {"EQ":"【成功】"}, "status": {"TYPE":"int"}, "data.businessType.id": {"TYPE":"int"}, "data.businessType.name":
+	  {"TYPE":"str"}, "openTime": {"RE":"[0-9]{2}:[0-9]{2}"}, "dealerName": {"TYPE":"str"}, "not_handler_count":
+	  {"TYPE":"int"}, "refund_not_handler_count": {"TYPE":"int"}, "messages": {"TYPE":"int"}, "redPoint": {"TYPE":"int"}
+  , "refund_red_point": {"TYPE":"int"}, "closeTime": {"RE":"[0-9]{2}:[0-9]{2}"}, "iconURL": {"TYPE":"str"},
+    "contact": {"TYPE":"str"}, "address": {"TYPE":"str"}, "product_count": {"TYPE":"dict"}, "count": {"TYPE":"int"},
+	  "online_count": {"TYPE":"int"}, "order_not_handler_count": {"TYPE":"int"}, "receive_count": {"TYPE":"int"},
+ "refund_receive_count": {"TYPE":"int"}, "statusCode": {"EQ":0}
+	},
+	"key":{"id":"data.businessType.id"}
+}

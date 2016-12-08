@@ -1,0 +1,12 @@
+{
+	"input":{
+		"method": "GET",
+		"url":"{{pre.jh_url}}",
+		"rest": "/ja/v1/tender?page=1&limit=200",
+		"headers":{"client":"3","Content-Type":"application/json"}
+},
+	"output":{
+		"code":{"EQ":0},
+		"data":{"TYPE":"dict"}
+	}
+}

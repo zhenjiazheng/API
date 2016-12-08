@@ -1,0 +1,17 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/account/queryInvestDetail",
+			"headers":{"client": "3",
+                        "Content-Type": "application/json",
+				"token":"{{key.token}}"
+				},
+      "param": {
+        "quickQueryIndex":2,"tenderType":2,"start":"2016-01-01","end":"2016-10-09","page":1,"limit":20
+      }
+	},
+   "output":{"code":{"EQ":0},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"}}
+
+}

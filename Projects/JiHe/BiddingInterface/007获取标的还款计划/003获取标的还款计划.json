@@ -1,0 +1,20 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/tender/{{key.id}}/repaymentPlan",
+			"headers":{"client": "3",
+                        "Content-Type": "application/json",
+				"token":"{{key.token}}"
+			}
+
+	},
+
+  "output":{"code":{"EQ":0},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"},
+            "repaymentMode":{"TYPE":"int"},"desc4repaymentMode":{"TYPE":"str"},
+            "borrowTime":{"TYPE":"int"},"interestStartTime":{"TYPE":"str"},
+            "account":{"TYPE":"float"},"interest":{"TYPE":"float"},
+            "periods":{"TYPE":"int"},"type":{"TYPE":"str"}}
+
+}

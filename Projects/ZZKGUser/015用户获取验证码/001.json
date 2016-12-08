@@ -1,0 +1,10 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_url}}",
+			"rest": "ja/user/v3/regist",
+			"param":{
+				"phone":"{{pre.User2}}"}
+			},
+  "output":{"statusCode": {"EQ":0},"msg":{"TYPE":"str"},"registed":{"EQ":0}, "success":{"TYPE":"bool"} }
+}

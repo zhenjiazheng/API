@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/regist",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "name":"{{pre.JRUser1}}", "password":"llz3410240","code":"{{key.id}}","couponId":"10"
+     }
+    },
+
+    "output":{"code":{"ALLIN":[0,1]},"msg":{"TYPE":"str"}}
+
+}

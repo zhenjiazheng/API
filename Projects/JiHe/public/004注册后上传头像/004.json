@@ -1,0 +1,15 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/upload/file",
+			"headers":{
+				"token":"{{key.token}}"
+			},
+			"files":"E:\\API\\API_Automation\\test1.jpg",
+			"param":{
+				"fileName":"/Desktop/test1.jpg"
+			}
+	},
+  "output":{"code": {"EQ":0}}
+}

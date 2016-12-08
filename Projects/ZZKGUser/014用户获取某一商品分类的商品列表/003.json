@@ -1,0 +1,14 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "ja/user/v3/dealer/{{key.dealer_id}}/categories",
+		"headers": {
+			"region": 6
+		}
+	},
+	"output": {
+		"msg": {"EQ":"查询不到商家分类信息"},
+		"success": {"EQ":false},
+		"statusCode": {"EQ":1}}
+}

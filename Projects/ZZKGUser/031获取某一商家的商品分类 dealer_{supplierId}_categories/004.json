@@ -1,0 +1,11 @@
+{
+	"input": {
+		"method": "get",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/dealer/{{key.supplier_id}}/categories/",
+		"headers":{"regoin": 1}
+	},
+  "output": {
+
+  }
+}

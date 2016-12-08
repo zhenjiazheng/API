@@ -1,0 +1,37 @@
+{
+  "author": "lancy",
+  "input": {
+        "method": "POST",
+        "url": "{{pre.jh_url}}",
+        "rest": "ja/v1/invest/tender",
+        "headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+        "param": {
+              "tenderId": "{{key.id1}}",
+              "investMoney": 100,
+              "payPassword": 123456
+            }
+  },
+  "output": {
+        "code": {
+          "EQ": 0
+        },
+        "msg": {
+          "TYPE": "str",
+          "EQ": "投资成功"
+        },
+        "invest_money": {
+          "EQ": 100
+        },
+        "invest_interest": {
+          "type": "float","LE":"100.0*{{key.rate}}*{{key.borrow_time}}/360"
+        },
+        "invest_reward":{
+          "type":"float","LE":"100.0*{{key.reward_interest}}/100*{{key.borrow_time}}/360"
+        }
+    }
+
+  }

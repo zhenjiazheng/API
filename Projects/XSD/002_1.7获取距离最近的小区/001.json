@@ -1,0 +1,9 @@
+{
+	"input":{
+			"author":"tester",
+			"method": "GET",
+			"url":"{{pre.xsd_user_url}}",
+			"rest": "/v2/setting/nearest/?latitude=10.1234&longitude=10.1234"
+	},
+  "output":{}
+}

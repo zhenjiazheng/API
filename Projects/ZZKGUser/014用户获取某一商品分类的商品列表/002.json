@@ -1,0 +1,51 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/dealer/{{key.dealer_id}}/categories",
+		"headers": {
+			"region": 6
+		}
+	},
+	"mock": {"count": 3,
+		"currPage": 1, "data": [
+		{"activity_id": 0,
+			"bad": 0,
+			"big_img": "http://image.thy360.com/images/deal/20151225/D119698.jpg",
+			"btton_name": "",
+			"categoryId": 443,
+			"cc": 0,
+			"copons": [],
+			"dealType": 0,
+			"deal_deal_id": 958159,
+			"deal_id": 997724,
+			"dealerId": 950680,
+			"dealerName":"",
+			"dealerOpenStats": 0,
+			"desc": "",
+			"desc_url": "http://172.16.6.213/py/v1/dealserver/deal/deal-info/958159/detail",
+			"expressFee": 0.0,
+			"fee": 0.0,
+			"general": 0,
+			"giftunitPrice": 2.99,
+			"giftunitPriceText": "2.99",
+			"goode": 0,
+			"img": "http://image.thy360.com/images/deal/20151225/D119698.jpg",
+			"isSeckillRemind": false,
+			"limit": 0,
+			"marketunitPrice": 2.99,
+			"marketunitPriceText": "2.99",
+			"name": "",
+			"origin": "",
+			"realName":"",
+			"sold": 0,
+			"specs": [{"desc": "500g", "id": 929959, "price": 2.99, "priceText": "2.99", "prchaseCont": 0}],
+			"store": 10,
+			"unit": "4",
+			"unitPrice": 2.99,
+			"unitPriceText": "2.99",
+			"url": "http://image.thy360.com/images/deal/20151225/D119698.jpg"
+		}], "totalPage": 10
+	},
+	"output": {"type":"list"}
+}

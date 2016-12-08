@@ -1,0 +1,14 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "ja/user/v3/citys"
+	},
+	"output": {
+		"msg": {"EQ":"获取开通城市列表成功"},
+    	"data":{"type":"list"},
+		"name":{"ALLIN": ["深圳市", "北京市", "上海市", "广州市"]},
+    	"success": {"EQ":true},
+    	"statusCode": {"EQ":0}
+	  }
+}

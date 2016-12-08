@@ -1,0 +1,16 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.jh_url}}",
+    "rest":"ja/v1/sms/reset_pwd?",
+    "headers":{"client":3,"Content-Type": "application/json"},
+    "param":{
+        	"phone":"{{pre.JRUser1}}","code":"{{key.id}}"
+    }},
+    "output":
+    {
+      "code":{"EQ":0},"msg":{"TYPE":"str","EQ":"验证码正确"}
+    },
+    "key":{"id":"data.setting_token"}
+
+}

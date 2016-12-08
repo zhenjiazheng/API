@@ -1,0 +1,16 @@
+{
+	"input": {
+		"method": "PUT",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/setting/offline_pay/password",
+		"headers": {
+			"token": "{{key.token}}",
+			"region":10
+		},
+		"param":{"oldPassword":"123456","password":"12345678"}
+	},
+	"output": {
+		"msg": {"EQ":"原密码错误，请重新输入"},
+		"statusCode": {"eq":1}
+	}
+}

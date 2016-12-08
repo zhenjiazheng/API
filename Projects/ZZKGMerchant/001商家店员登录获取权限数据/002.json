@@ -1,0 +1,10 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "/py/dealer/v4/supplier/seller/permission/get/",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{ "staff_name": {"TYPE":"str"},"login_status":{"TYPE":"int"}, "is_closing":{"TYPE":"int"},"has_close":{"TYPE":"bool"},"is_auto_closing":{"TYPE":"bool"},"iconURL":{"RE":"http://[a-zA-Z0-9.]*"},"business_type_id":{"TYPE":"int"},"is_card_verified":{"TYPE":"int"},"display_item":{"TYPE":"list"},"title":{"ALLIN":["店铺资料","消息中心","我的账户","订单管理","商品管理","促销功能","boss模块","退款管理"]}
+  }
+}

@@ -1,0 +1,11 @@
+{
+	"input":{
+			"method": "PUT",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/login",
+			"headers":{
+				"token":"{{key.token}}"
+			}
+	},
+  "output":{"code": {"EQ":0}}
+}

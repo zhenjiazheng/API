@@ -1,0 +1,10 @@
+{
+	"input":{
+			"author":"tester",
+			"method": "POST",
+			"url":"{{pre.xsd_user_url}}",
+			"rest": "/v2/login",
+			"param":{"pass":"1234", "phone": "17710101010"}
+	},
+  "output":{"statusCode": {"TYPE":"int","EQ":2},"msg":{"TYPE":"str","EQ":"用户不存在"} }
+}

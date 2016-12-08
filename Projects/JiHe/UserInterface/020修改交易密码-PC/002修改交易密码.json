@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "PUT",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/pc/modifyPayPwd",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+       "param": {
+       "oldPwd":"123456","newPwd":"123456","confirmNewPwd":"123456"
+     }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"修改成功"}}
+
+}

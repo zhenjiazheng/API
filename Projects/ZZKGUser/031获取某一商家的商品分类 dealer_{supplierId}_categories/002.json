@@ -1,0 +1,24 @@
+{
+	"input": {
+		"method": "get",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/dealer/{{key.dealer_id}}/"
+	},
+  "output": {
+		"status": {"type":"int"},
+		"businessType": {"type":"int"},
+		"endTime": {"type":"str"},
+		"name": {"type":"str"},
+		"pic": {"type":"str"},
+		"dealerOpenStatus": {"type":"int"},
+		"startTime": {"type":"str"},
+		"address": {"type":"str"},
+		"fullFreeFee": {"type":"float"},
+		"deliverFee": {"type":"float"},
+		"type": {"type":"int"},
+		"id": {"eq":{{key.dealer_id}}},
+		"desc": {"type":"str"},
+		"openTime": {"type":"str"}
+
+  }
+}

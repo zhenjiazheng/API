@@ -1,0 +1,16 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/prepaidcards",
+		"headers": {
+			"region": 4
+		}
+	},
+  "output": {
+        "price": {"type":"float","ALLIN":[100.0,500.0,1000.0]},
+        "desc": {"EQ":"年化利率10%"},
+        "id": {"type":"int"},
+        "denomination": {"type":"float","ALLIN":[100.0,500.0,1000.0]}
+  }
+}

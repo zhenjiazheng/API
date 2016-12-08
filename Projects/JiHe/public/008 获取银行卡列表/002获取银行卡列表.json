@@ -1,0 +1,15 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.jh_url}}",
+    "rest":"/ja/v1/banks?type=2",
+    "headers":{"client":3,"token":"{{key.token}}"}
+  },
+  "output":{
+    "data":{"TYPE":"dict"},"msg":{"EQ":"获取成功","TYPE":"str"},"name":{"NF":"银行","TYPE":"str"},"type":{"TYPE":"str"},"desc":{"EQ":"请咨询相关银行","type":"str"},
+    "icon_web":{"NF":"http://jhjr-devtest.oss-cn-shenzhen.aliyuncs.com/bank/","type":"str"},"content":{"NF":"单笔万,当日万","type":"str"},
+    "icon_white":{"NF":"http://jhjr-devtest.oss-cn-shenzhen.aliyuncs.com/bank/","type":"str"},"single_money":{"type":"int"},"baofu_limit":{"type":"dict"},
+    "icon":{"NF":"http://jhjr-devtest.oss-cn-shenzhen.aliyuncs.com/bank/","type":"str"},
+    "oneday_money":{"type":"int"},"bank_id":{"type":"int"},"canjie_limit":{"type":"dict"}
+  }
+}

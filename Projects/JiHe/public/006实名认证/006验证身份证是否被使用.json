@@ -1,0 +1,16 @@
+{
+  "input": {
+    "method": "GET",
+    "url": "{{pre.jh_url}}",
+    "rest": "/ja/v1/idcard/460027199209252011/use",
+    "headers": {
+      "client": "3",
+      "Content-Type": "application/json",
+      "token": "{{key.token}}"
+    }
+  },
+  "output":{
+    "code":{"EQ":0}
+  }
+}
+

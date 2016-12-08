@@ -1,0 +1,12 @@
+{
+  "input":{
+    "method":"POST",
+    "url":"{{pre.jh_url}}",
+    "rest": "ja/v1/bankcard/bind",
+    "headers":{"client":"3","token":"{{key.token}}"},
+    "param":{"bankId":"71","bankno":"58583736251726361","province":"广东省","city":"深圳市",
+      "phone":"15279055899","isCompany":"false"}
+  },
+  "output":{"msg":{"EQ":"请填写银行卡开户支行"},"code":{"EQ":1}}
+
+}

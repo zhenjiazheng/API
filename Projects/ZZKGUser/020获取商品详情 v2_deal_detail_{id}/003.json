@@ -1,0 +1,143 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/deal/detail/{{key.id}}/",
+		"headers": {
+			"region": 4
+		}
+	},
+  "output": {
+	  "origin": {
+		  "type": "str"
+	  },
+	  "deal_id": {
+		  "EQ": {{key.id}}},
+        "cc": {
+            "type": "int"
+        },
+        "activity_id": {
+            "type": "int"
+        },
+        "general": {
+            "type": "int"
+        },
+        "giftUnitPrice": {
+            "type": "float"
+        },
+        "big_img": {
+            "type": "str"
+        },
+        "specs": {
+            "type": "list"
+        },
+        "price": {
+            "type": "float"
+        },
+        "priceText": {
+            "type": "str"
+        },
+        "skillPrice": {
+            "type": "float"
+        },
+        "skillPriceText": {
+            "type": "str"
+        },
+        "purchaseCount": {
+            "type": "int"
+        },
+        "stock": {
+            "type": "int"
+        },
+        "id": {
+            "type": "int"
+        },
+        "unit": {
+            "type": "str"
+        },
+        "unitPriceText": {
+            "type": "str"
+        },
+        "fee": {
+            "type": "float"
+        },
+        "dealerName": {
+            "type": "str"
+        },
+        "realName": {
+            "type": "str"
+        },
+        "img": {
+            "type": "str"
+        },
+        "desc_url": {
+            "type": "str"
+        },
+        "dealerOpenStatus": {
+            "type": "int"
+        },
+        "score": {
+            "type": "float"
+        },
+        "categoryId": {
+            "type": "int"
+        },
+        "store": {
+            "type": "int"
+        },
+        "marketUnitPrice": {
+            "type": "float"
+        },
+        "marketUnitPriceText": {
+            "type": "str"
+        },
+        "button_name": {
+            "type": "str"
+        },
+        "sold": {
+            "type": "int"
+        },
+        "isSeckillRemind": {
+            "type": "bool"
+        },
+        "unitPrice": {
+            "type": "float"
+        },
+        "coupons": {
+            "type": "list"
+        },
+        "desc": {
+            "type": "str"
+        },
+        "giftUnitPriceText": {
+            "type": "str"
+        },
+        "dealerId": {
+            "type": "int"
+        },
+        "name": {
+            "type": "str"
+        },
+        "url": {
+            "type": "str"
+        },
+        "deal_deal_id": {
+            "type": "int"
+        },
+        "bad": {
+            "type": "int"
+        },
+        "limit": {
+            "type": "int"
+        },
+        "goode": {
+            "type": "int"
+        },
+        "expressFee": {
+            "type": "float"
+        },
+        "dealType": {
+            "type": "int"
+        }
+	  }
+}

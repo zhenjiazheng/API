@@ -1,0 +1,24 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v3/memberbao/signdetail",
+		"headers": {
+			"token": "{{key.token}}"
+		}
+	},
+	"output": {
+		"statusCode": {"EQ":0},
+		"msg": {"TYPE":"str"},
+		"data": {"TYPE":"dict"},
+		"userId": {"TYPE":"int"},
+		"totalCount": {"TYPE":"int"},
+		"continueCount":{"TYPE":"int"},
+		"lastTime": {"type":"str"},
+		"rewardType": {"TYPE":"int"},
+		"rewardAmount": {"TYPE":"float"},
+		"rules": {"TYPE":"list"},
+		"id": {"type":"int"},
+		"signCount": {"ALLIN":[3,7,15,20]}
+	}
+}

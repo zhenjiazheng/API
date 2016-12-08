@@ -1,0 +1,24 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "/py/dealer/v4/supplier/seller/",
+			"headers": {"dealertoken":"{{key.dealer_token}}"},
+			"param": {
+				"id": 109500,
+				"img": "http://7xjpiw.com1.z0.glb.clouddn.com/Fiy-CDgEjPAw7ayRLrB6WOk0_wf6",
+				"name": "测试姓名",
+				"seller_permission": {
+					"has_close": false,
+					"has_purchase": false,
+					"id": 10402
+				},
+				"user": {
+					"id": 74094,
+					"phone": "13924595453",
+                    "password":"123456"
+				}
+			}
+	},
+  	"output":{ "msg":{"TYPE":"str"}}
+}

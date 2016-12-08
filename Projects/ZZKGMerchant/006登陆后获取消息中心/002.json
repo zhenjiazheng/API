@@ -1,0 +1,11 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/v4/dealer/message/?page=2&limit=10",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{"statusCode":{"EQ":0},"totalPage":{"TYPE":"int"},"currPage":{"TYPE":"int","EQ":2},"total":{"TYPE":"int"},"count": {"TYPE":"int","EQ":10},"hasNext":{"TYPE":"bool"}
+  ,"id":{"TYPE":"int","LL":10},"context":{"TYPEIN":["str"],"LL":10},"message_type":{"TYPEIN":["str"]},"kwargs":{"TYPE":"dict","LL":10},"status":{"TYPE":"int"}
+  ,"update_time":{"TYPE":"str","LL":10},"create_time":{"TYPE":"str","LL":10}}
+}

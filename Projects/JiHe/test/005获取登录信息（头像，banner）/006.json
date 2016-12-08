@@ -1,0 +1,11 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/login",
+			"param":{
+				"name":"{{pre.User1}}", "password": "test123456"
+			}
+	},
+  "output":{"code": {"NEQ":0}}
+}

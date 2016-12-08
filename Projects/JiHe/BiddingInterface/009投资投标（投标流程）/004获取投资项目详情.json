@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "/ja/v1/tender/{{key.id1}}",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "tenderId":"{{key.id1}}", "couponId":"{{key.id2}}", "investMoney": 100, "payPassword": 123456
+     }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"TYPE":"str"}}
+
+}

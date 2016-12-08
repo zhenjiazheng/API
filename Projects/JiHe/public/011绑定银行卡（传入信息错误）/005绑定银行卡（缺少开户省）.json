@@ -1,0 +1,12 @@
+{
+  "input":{
+    "method":"POST",
+    "url":"{{pre.jh_url}}",
+    "rest": "ja/v1/bankcard/bind",
+    "headers":{"client":"3","token":"{{key.token}}"},
+    "param":{"bankId":"71","bankno":"5215478541254250","city":"深圳市","bankBranch":"高新支行",
+      "phone":"15279055899","isCompany":"false"}
+  },
+  "output":{"msg":{"EQ":"请选择银行卡开户省"},"code":{"EQ":1}}
+
+}

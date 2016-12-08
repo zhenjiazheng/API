@@ -1,0 +1,11 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.jh_url}}",
+    "rest": "/ja/v1/bankcards",
+    "headers":{"client":"3","token":"{{key.token}}"}
+  },
+  "output":{"msg":{"EQ":"获取成功"},"code":{"EQ":0},"data":{"type":"dict"},"bank_name":{"type":"str"},"tip_content":{"NF":"单笔万,当日万"},
+    "card_id":{"type":"int"},"user_name":{"EQ":"{{key.name}}"}},
+  "key":{"card_id":"data.0.card_id"}
+}

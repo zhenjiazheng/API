@@ -1,0 +1,33 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/home",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"TYPE":""}, "data":{"TYPE":"dict"},"id":{"TYPE":"int"},"title":{"TYPE":"str"},
+	  "rate":{"TYPE":"float"},"borrow_time":{"TYPE":"str"},"msg":{"TYPE":"str"},
+	  "limit_min_money":{"TYPE":"int"},"limit_max_money":{"TYPE":"int"},
+	  "new_title":{"TYPE":"str"},"new_content":{"TYPE":"str"},"is_new":{"TYPE":"bool"},
+	  "status_msg":{"TYPE":"str"}, "repayment_way":{"TYPE":"str"},
+	  "money":{"TYPE":"float"},"reward_msg":{"TYPE":"str"},"repayment_mode":{"TYPE":"int"},"borrow_time_Mode":{"TYPE":"int"},
+	  "color":{"TYPE":"str"},"can_use_gift":{"TYPE":"bool"},"coupon_count":{"TYPE":"int"},"can_bid":{"TYPE":"bool"},
+	  "type":{"TYPE":"int","ALLIN":[1,2,3,100,101]},"type_msg":{"TYPE":"str"},
+	  "protocolRepaymentDay":{"TYPE":"int"},"diffDays":{"TYPE":"int"},"invest_count":{"TYPE":"int"},"raise_time":{"TYPE":"str"},
+	  "status":{"TYPE":"int","ALLIN":[0,1,2,3,4,5,6]},"service_fee":{"TYPE":"int"}},
+
+      "data.articles.id":{"TYPE":"int"},"data.articles.title":{"TYPE":"str"},"content":{"TYPE":"str"},
+      "keyword":{"TYPE":"str"},"data.articles.status":{"TYPE":"int"},"data.articles.updated_at":{"TYPE":"str"},
+
+      "data.banners.id":{"TYPE":"int"},"data.banners.status":{"TYPE":"int"},"remark":{"TYPE":"str"},
+      "image":{"EQ":null},"data.articles.title":{"TYPE":"str"},"data.banners.updated_at":{"TYPE":"str"},
+      "link":{"EQ":null}
+}
+

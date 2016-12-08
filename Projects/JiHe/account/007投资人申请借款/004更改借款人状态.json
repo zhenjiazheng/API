@@ -1,0 +1,3 @@
+{
+  "sql":["UPDATE `waiwang`.`users_extend` SET `is_borrow`=0 WHERE  `user_id`=1175;"]
+}

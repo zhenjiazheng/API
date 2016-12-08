@@ -1,0 +1,22 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/investorInfo",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"获取成功"},"data":{"TYPE":"dict"},
+      "username":{"TYPE":"str"},"riskType":{"TYPE":"str"},"flag4BankCard":{"TYPE":"str"},
+      "mobilePhone":{"TYPE":"str"},"flagCode4IdCard":{"TYPE":"int"},"switch4Notice":{"TYPE":"str"},
+      "flagCode4BankCard":{"TYPE":"int"},"progress":{"TYPE":"int"},"flag4IdCard":{"TYPE":"str"},
+      "lastLoginTime":{"TYPE":"str"},"emailMsg":{"TYPE":"str"},"flagBindEmail":{"TYPE":"int"},
+      "flagCode4AuditIdCard":{"TYPE":"int"},"flag4payPwd":{"TYPE":"int"},"flagCodeMobile":{"TYPE":"int"}}
+
+
+}

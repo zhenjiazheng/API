@@ -1,0 +1,9 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/v4/so2o/product/search/?page=1&limit=1&keyword=爱你是幸福之情人礼包",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{"count":{"EQ":1}, "currPage":{"EQ":1}}
+}

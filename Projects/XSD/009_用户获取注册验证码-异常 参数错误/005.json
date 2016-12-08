@@ -1,0 +1,10 @@
+{
+	"input":{
+			"author":"tester",
+			"method": "POST",
+			"url":"{{pre.xsd_user_url}}",
+			"rest": "ja/user/v3/regist",
+			"param":{ "phone": "17701010101", "appId":"xsd"}
+	},
+  "output":{"statusCode": {"TYPE":"int","EQ":1},"msg":{"TYPE":"str"} }
+}

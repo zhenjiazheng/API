@@ -1,0 +1,21 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/article/{{key.id}}",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":""},"data":{"TYPE":"dict"},
+      "sort":{"TYPE":"int"},"status":{"TYPE":"int"},"keyword":{"TYPE":"str"},
+      "title":{"TYPE":"str"},"created_at":{"TYPE":"str"},"author":{"TYPE":"str"},
+      "updated_at":{"TYPE":"str"},"content":{"TYPE":"str"},
+      "system_type":{"TYPE":"int"},"category_id":{"TYPE":"int"},"id":{"TYPE":"int"}}
+
+    }
+

@@ -1,0 +1,14 @@
+{
+	"input":{
+			"author":"tester",
+			"method": "GET",
+			"url":"{{pre.xsd_user_url}}",
+			"rest": "v2/deal/recommend/"
+	},
+  "output":{"count": {"TYPE":"int"},
+    "totalpage": {"TYPE":"int"},
+    "hasNext": {"TYPE":"bool"},
+    "currPage": {"TYPE":"int"},
+    "total": {"TYPE":"int"},
+    "data": {"TYPE":"dict"}}
+}

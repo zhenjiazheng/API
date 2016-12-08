@@ -1,0 +1,38 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/coupons/dealer/{{key.id}}",
+		"headers": {
+			"region": 4
+		}
+	},
+  "output": {
+
+        "effectTime": {"type":"str"},
+        "description": {"type":"str"},
+        "dealer": {"type":"dict"},
+		"status": {"type":"int"},
+		"businessType": {"type":"int"},
+		"endTime": {"type":"str"},
+		"tel": {"type":"str"},
+		"name": {"type":"str"},
+		"pic": {"type":"str"},
+		"dealerOpenStatus": {"type":"int"},
+		"contact": {"type":"str"},
+		"startTime": {"type":"str"},
+		"address": {"type":"str"},
+		"fullFreeFee": {"type":"float"},
+		"openTime": {"type":"str"},
+		"deliverFee": {"type":"float"},
+		"type": {"type":"int"},
+		"id": {"type":"int"},
+		"desc": {"type":"str"},
+        "denomination": {"type":"float"},
+        "expireTime": {"type":"str"},
+        "limit": {"type":"int"},
+        "imgUrl": {"type":"str"},
+        "condition": {"type":"int"},
+        "stock": {"type":"int"}
+  }
+}

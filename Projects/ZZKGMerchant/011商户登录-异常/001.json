@@ -1,0 +1,12 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/backend/v5/seller/login/",
+			"headers": null,
+			"param":{
+				"phoneNumber":"17723232323", "password": "123456"
+			}
+	},
+  "output":{ "msg": {"EQ":"【用户名或密码错误】"}}
+}

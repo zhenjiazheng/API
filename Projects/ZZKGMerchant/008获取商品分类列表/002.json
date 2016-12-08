@@ -1,0 +1,9 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/v4/mobileapi/column/",
+			"headers": {"dealertoken":"{{key.dealer_token}}"}
+	},
+  "output":{"statusCode":{"EQ":0},"data":{"TYPE":"dict"},"count":{"TYPE":"int"},"id":{"TYPE":"int"},"name":{"TYPEIN":["str"]}}
+}

@@ -1,0 +1,16 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/deal/categories/1/",
+		"headers": {
+			"region": 4
+		}
+	},
+  "output": {
+	  "iconUrl": {"type":"str"},
+	  "parentId": {"EQ":1},
+	  "id": {"type":"int"},
+	  "name": {"type":"str"}
+  }
+}

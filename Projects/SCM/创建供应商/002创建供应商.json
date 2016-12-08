@@ -1,0 +1,47 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_merchant_release_url}}",
+			"rest": "/py/erp/v1/supply/suppliers/",
+            "headers":{"token":"{{key.token}}","appid":""},
+			"param":{
+				"name": "test5",
+                "scope": "餐饮",
+                "province": "广东",
+                "city": "深圳",
+                "county": "南山区",
+                "address": "学府路卫星大厦",
+                "contact_name": "李乐弦",
+                "contact_tel": "123456789",
+                "manager": "林佳红",
+                "legal_person": "陈佳",
+                "status": 0,
+                "cooperation_way": 0,
+                "bank_card": {
+                    "owner_name": "lilx",
+                    "company_name": "招商银行",
+                    "card_no": "123456789",
+                    "province": "广东",
+                    "city": "深圳",
+                    "address": "软件园支行"
+                },
+	"certifications": [
+			{
+				"url": "http://baidu.com/"
+			}
+		]
+
+
+			}
+	},
+  	"output": {
+      "statusCode": {
+        "EQ": 0
+      },
+      "msg": {
+        "TYPE": "str"
+      },
+      "status":{ "EQ": "正常"}
+
+    }
+}

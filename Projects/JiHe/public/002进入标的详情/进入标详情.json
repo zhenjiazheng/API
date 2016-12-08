@@ -1,0 +1,9 @@
+{
+  "input":{"method": "GET",
+		"url":"{{pre.jh_url}}",
+    "headers":{"client":"3","Content-Type":"application/json"},
+		"rest": "/ja/v1/tender/{{key.id}}/item"
+  },
+   "output":{"code":{"EQ":0}
+}
+}

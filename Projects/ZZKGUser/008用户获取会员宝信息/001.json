@@ -1,0 +1,44 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_url}}",
+			"rest": "v2/regist/code",
+			"param":{
+				"phone": "{{pre.User2}}",
+				"introducerCode": "",
+				"code": "1234"}
+			},
+  "output": {
+	  "statusCode": {
+		  "EQ": 0
+	  },
+	  "msg": {
+		  "EQ": "登录成功"
+	  },
+	  "id": {
+		  "TYPE": "str"
+	  },
+	  "type": {
+		  "EQ": 0
+	  },
+	  "token": {
+		  "TYPE": "str"
+	  },
+	  "expiresIn": {
+		  "EQ": 21600
+	  },
+	  "openId": {
+		  "TYPE": "str"
+	  },
+	  "newUser": {
+		  "TYPE": "bool"
+	  },
+	  "pass": {
+		  "TYPE": "str"
+	  },
+	  "success": {
+		  "EQ": true
+	  }
+  },
+	"key":["token","id","openId"]
+}

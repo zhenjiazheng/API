@@ -1,0 +1,12 @@
+{
+  "input":{
+      "method":"PUT",
+      "url":"{{pre.jh_url}}",
+      "rest":"/ja/v1/bankcard/bind",
+      "headers":{"client":"3","token":"{{key.token}}"},
+      "param":{
+       "cardId":"{{key.card_id}}","phone":"15279055899","province":"广东","city":"深圳市","bankBranch":"智障1支行"
+      }
+  },
+  "output":{"msg":{"EQ":"修改成功"},"code":{"EQ":0}}
+}

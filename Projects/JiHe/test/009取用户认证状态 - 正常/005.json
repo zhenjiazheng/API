@@ -1,0 +1,9 @@
+{
+	"sql":[
+		"delete from users where id = {{key.uid}}",
+		"delete from users_verified where user_id = {{key.uid}}",
+		"delete from users_extend where user_id = {{key.uid}}",
+		"delete from account_invest where user_id = {{key.uid}}",
+		"delete from account_invest_record where user_id = {{key.uid}}"
+	]
+}

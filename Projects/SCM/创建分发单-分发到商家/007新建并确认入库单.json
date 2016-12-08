@@ -1,0 +1,26 @@
+{
+  "input": {
+      "method": "POST",
+       "url": "{{pre.zzkg_merchant_release_url}}",
+      "rest": "/py/erp/v1/supply/warehouses/",
+      "headers": {
+      "token": "{{key.token}}", "appid": ""
+    },
+    "param":{
+      "purchase_order": "{{key.id2}}",
+	  "goods": [
+			{
+				"purchase_goods": {{key.id3}},
+				"count": 10,
+                "price":4,
+				"sn": "20160921"
+			}
+		],
+      "status":1
+    }
+  },
+  "output": {
+      "statusCode": {"EQ": 0}, "msg": {"TYPE": "str"}, "status":{"TYPE":"str"}
+  },
+  "key":{"id5":"data.goods.0.id","id4":"data.id"}
+}

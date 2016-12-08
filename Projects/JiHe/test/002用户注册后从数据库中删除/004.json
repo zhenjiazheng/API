@@ -1,0 +1,11 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/regist",
+			"param":{
+				"phone":"{{pre.User1}}"
+			}
+	},
+  "output":{"code": {"EQ":1}}
+}

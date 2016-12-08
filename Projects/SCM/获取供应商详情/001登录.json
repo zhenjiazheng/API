@@ -1,0 +1,12 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_merchant_release_url}}",
+			"rest": "py/v4/admin/auth/login",
+			"param":{
+				"username":"{{pre.BDCRMUser}}", "password": "{{pre.BDCRMPassword}}"
+			}
+	},
+  	"output":{"statusCode": {"EQ":0},"msg":{"TYPE":"str"}, "token":{"TYPE":"str"} },
+	"key":["token"]
+}

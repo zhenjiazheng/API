@@ -1,0 +1,6 @@
+{
+	"sql":[
+		"select id, name from users where phone = {{pre.User1}}"
+	],
+	"key": ["id", "name"]
+}

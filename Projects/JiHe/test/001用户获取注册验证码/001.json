@@ -1,0 +1,15 @@
+{
+	"input":{
+			"author":"tester",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/test/sms/regist?",
+			"headers":{"client": "lj_android",
+                        "Content-Type": "application/json"
+				},
+			"param":{
+				"phone":"13512345678", "code": "1234"
+			}
+	},
+  "output":{"code": {"ALLIN":[0,"1234"]},"msg":{"TYPE":"str"}, "data":{"TYPE":"dict"},"data.code":{"EQ":"1234"} }
+}

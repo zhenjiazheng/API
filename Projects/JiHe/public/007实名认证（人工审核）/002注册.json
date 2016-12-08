@@ -1,0 +1,12 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/regist",
+			"param":{
+				"name":"{{pre.User4}}","password":"a1234567","code":"{{key.id1}}"
+			}
+	},
+  	"output":{"code": {"EQ":0}},
+	"key":["token","uid"]
+}

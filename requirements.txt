@@ -1,0 +1,9 @@
+Jinja2==2.6
+PyMySQL==0.7.5
+requests==2.10.0
+simplejson==3.5.2
+redis == 2.10.5
+requests-mock == 1.1.0
+chardet == 2.3.0
+xlrd == 0.9.4
+xlutils == 2.0.0

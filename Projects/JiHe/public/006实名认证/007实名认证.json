@@ -1,0 +1,9 @@
+{
+  "input":{
+    "method":"POST",
+    "url":"{{pre.jh_url}}",
+    "rest":"/ja/v1/idcard/bind",
+    "headers":{"client":"3","token":"{{key.token}}"},
+  "param":{"name":"王广信","idno":"460027199209252011","code":"{{key.idcode}}"}
+  }
+}

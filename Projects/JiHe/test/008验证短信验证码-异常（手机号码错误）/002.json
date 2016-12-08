@@ -1,0 +1,8 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "/ja/v1/sms/regist?",
+			"param":{"phone":"{{pre.User3}}", "code": "1234"}},
+  	"output":{"code": {"NEQ":0},"msg":{"TYPE":"str"} }
+}

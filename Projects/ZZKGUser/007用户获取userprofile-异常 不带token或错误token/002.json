@@ -1,0 +1,17 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/setting/userprofile",
+		"headers": {
+		}
+	},
+	"output": {
+		"msg": {
+			"EQ": "用户未授权"
+		},
+		"statusCode": {
+			"EQ": 401
+		}
+	}
+}

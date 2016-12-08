@@ -1,0 +1,23 @@
+{
+  "input":{
+           "method": "POST",
+            "url":"{{pre.zzkg_merchant_release_url}}",
+            "rest":"/py/erp/v1/supply/supplier_goods/",
+            "headers": {"token":"{{key.token}}","appid":""},
+            "param":{
+                 "supplier_id": 12,
+                 "goods": ["6920160906162", "120413"]
+                  }
+
+
+        },
+  "output":{
+           "statusCode":{"EQ":0},
+            "msg":{"TYPE":"str"},
+            "barcode":{"ALLIN":["6920160906162", "120413"]}
+
+
+
+  }
+}
+

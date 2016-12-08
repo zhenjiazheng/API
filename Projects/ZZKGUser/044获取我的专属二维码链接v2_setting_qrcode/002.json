@@ -1,0 +1,13 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/setting/qrcode",
+		"headers": {
+			"token": "{{key.token}}"
+		}
+	},
+	"output": {
+		"url": {"EQ":"http://7xjpiw.com1.z0.glb.clouddn.com/u{{key.id}}/qrcode"}
+	}
+}

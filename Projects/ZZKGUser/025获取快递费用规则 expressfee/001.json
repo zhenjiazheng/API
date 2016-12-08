@@ -1,0 +1,16 @@
+{
+	"input":{
+			"method": "GET",
+			"url":"{{pre.zzkg_url}}",
+			"rest": "v2/expressfee",
+			"headers":{"region":4}
+			},
+  "output": {
+	  "express_fee": {
+		  "TYPE": "float"
+	  },
+	  "amount": {
+		   "TYPE": "float"
+	  }
+  }
+}

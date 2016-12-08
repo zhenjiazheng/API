@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/login/info?",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "name":"{{pre.JRUser}}"
+     }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":""},"id":{"TYPE":"int"},
+      "title":{"TYPE":"str"},"banner_type":{"TYPE":"int"},"id":{"TYPE":"int"}}
+}

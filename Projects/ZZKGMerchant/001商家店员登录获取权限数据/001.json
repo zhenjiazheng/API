@@ -1,0 +1,14 @@
+{
+	"input":{
+			"method": "POST",
+			"url":"{{pre.zzkg_merchant_url}}",
+			"rest": "py/dealer/backend/v5/seller/login/",
+			"headers": null,
+			"param":{
+				"phoneNumber":"13924595452", "password": "123456"
+			}
+	},
+  "output":{ "msg": {"EQ":"【成功】"}
+      },
+  "key": ["dealer_token"]
+}

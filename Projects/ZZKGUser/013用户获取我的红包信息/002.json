@@ -1,0 +1,23 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v3/memberbao/redpackage/list",
+		"headers": {
+			"token": "{{key.token}}"
+		},
+		"params":{"limit":20,
+				"page":1}
+	},
+	"output": {
+			"statusCode": {"EQ":0},
+			"msg": {"TYPE":"str"},
+			"data": {"TYPEIN":["list","dict"]},
+			"totalpage": {"TYPE":"int"},
+			"currPage": {"TYPE":"int"},
+			"total": {"EQ":0},
+			"count": {"EQ":0},
+			"hasNext": {"EQ":false},
+			"success": {"EQ":true}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "input":{
+    "method":"GET",
+    "url":"{{pre.zzkg_merchant_release_url}}",
+    "rest":"/py/erp/v1/supply/purchases/{{key.id2}}/",
+    "headers": {
+      "token": "{{key.token}}", "appid": ""
+    },
+    "output":{
+      "msg":{"TYPE":"str"},
+    "statusCode":{"EQ":0}
+    }
+  }
+}

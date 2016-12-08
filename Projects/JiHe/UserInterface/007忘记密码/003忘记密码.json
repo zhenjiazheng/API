@@ -1,0 +1,19 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/pwd",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "password":"llz3410240","setting_token":"{{key.id}}"
+     }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"成功"}}
+
+}

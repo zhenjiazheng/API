@@ -1,0 +1,35 @@
+{
+	"input": {
+		"method": "POST",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v3/setting/address",
+		"headers": {
+			"token": "{{key.token}}",
+			"region":{{key.id1}}
+		},
+		"param":{"phone":"17712345678","contact":"helloworld","gender":0,"village":"test","regionId":1,
+			"building":"tower building","room":"123","defaultAddr":false,"buy_way":1,"city1":"sz","room1":"test"}
+	},
+	"output": {
+		"msg": {"EQ":"成功"},
+    	"data": {"type":"dict"},
+        "building": {"eq":""},
+        "buy_way": {"eq":1},
+        "room": {"eq":"123"},
+        "gender": {"eq":0},
+        "room1": {"eq":"test"},
+        "address": {"type":"str","eq":"广东省深圳市testtest"},
+        "longitude": {"eq":0.0},
+        "phone": {"eq":"17712345678"},
+        "contact": {"eq":"helloworld"},
+        "defaultAddr": {"eq":true},
+        "village": {"eq":"test"},
+        "latitude":{"eq":0.0},
+        "city1": {"type":"str","eq":"广东省深圳市"},
+        "regionId": {"eq":1},
+        "id": {"type":"int"},
+        "realVillage": {"eq":"test"},
+		"success": {"eq":true},
+		"statusCode": {"eq":0}},
+    "key":{"addrId":"data.id"}
+}

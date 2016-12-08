@@ -1,0 +1,19 @@
+{
+  "input":{
+    "method":"POST",
+    "url":"{{pre.zzkg_merchant_release_url}}",
+    "rest":"/py/erp/v1/supply/purchases/",
+    "headers": {
+      "token": "{{key.token}}", "appid": ""
+    },
+    "param":{
+      "supplier_id":"{{key.id0}}",
+	  "goods": [{"goods_id":"{{key.id1}}", "count": 10, "price": 2}]
+    }
+  },
+  "output":{
+    "msg":{"TYPE":"str"},
+    "statusCode":{"EQ":0}
+  },
+  "key":{"id2":"data.id"}
+}

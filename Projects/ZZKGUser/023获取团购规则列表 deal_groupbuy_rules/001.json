@@ -1,0 +1,12 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/deal/groupbuy/rules/",
+		"headers": {
+			"region": 4
+		}
+	},
+  "output": {
+  }
+}

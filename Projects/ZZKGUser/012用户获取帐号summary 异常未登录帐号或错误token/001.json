@@ -1,0 +1,11 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/account/summary",
+		"headers": {
+			"token": "{{key.token}}"
+		}
+	},
+	"output": {	"msg": {"EQ":"用户未授权"}, "statusCode": {"EQ":401},  "success": {"EQ":false}}
+}

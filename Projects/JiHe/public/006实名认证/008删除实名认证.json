@@ -1,0 +1,5 @@
+{
+  "sql":[
+     "delete from users_idcard where realname ='王广信'"
+  ]
+}

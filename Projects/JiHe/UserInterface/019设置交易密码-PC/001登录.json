@@ -1,0 +1,23 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "POST",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/login",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            },
+     "param": {
+       "name":"{{pre.JRUser}}","password":"llz3410240"
+     }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"登录成功"},
+      "username":{"TYPE":"str"},"addtime":{"TYPE":"str"}, "idcard":{"TYPE":"bool"},
+      "phone":{"TYPE":"str"},"is_borrow":{"TYPE":"bool"},"bankcard":{"TYPE":"bool"},
+      "pay_password":{"TYPE":"bool"},"name":{"TYPE":"str"},"idcard_status":{"TYPE":"int","ALLIN":[0,1,2,3]}},
+
+    "key":["uid","token"]
+}

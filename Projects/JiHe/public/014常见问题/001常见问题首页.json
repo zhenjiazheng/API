@@ -1,0 +1,16 @@
+{
+  "input": {
+    "method": "GET",
+    "url": "{{pre.jh_url}}",
+    "rest": "/ja/v1/questions",
+    "headers": {
+    "client": "3"
+  }
+},
+  "output":{
+    "code":{"EQ":0},"data":{"type":"dict"},"hotQuestions":{"type":"dict"},"categories":{"type":"dict"},"id":{"type":"int"},
+    "module":{"type":"str"},"parent_id":{"type":"int"},"is_show":{"type":"bool"},"flag":{"type":"int"},"category_id":{"type":"int"},"title":{"type":"str"},
+    "content":{"type":"str"}
+  },
+  "key":{"category_id":"data.categories.0.id"}
+}

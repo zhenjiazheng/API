@@ -1,0 +1,24 @@
+{
+	"input":{
+			"author":"lancy",
+			"method": "GET",
+			"url":"{{pre.jh_url}}",
+			"rest": "ja/v1/user/getHomeData4Investor",
+			"headers": {
+              "client": "3",
+              "Content-Type": "application/json",
+              "token": "{{key.token}}"
+            }
+    },
+
+    "output":{"code":{"EQ":0},"msg":{"EQ":"获取成功"},"data":{"TYPE":"dict"},
+      "username":{"TYPE":"str"},"account":{"TYPE":"float"},"useableAmount":{"TYPE":"float"},
+      "useableCouponCount":{"TYPE":"int"},"amount4WaitReceived":{"TYPE":"float"},
+      "amount4income":{"TYPE":"float"},"msgFlag":{"TYPE":"int"},"msgCount4UnRead":{"TYPE":"int"},
+      "showExpGuide":{"TYPE":"bool"},"lastLoginTime":{"TYPE":"int"},
+
+      "sort":{"TYPE":"int"},"status":{"TYPE":"int"},"remark":{"EQ":"全名合伙人"},
+      "data.banners.0.title":{"EQ":"全名合伙人"}, "updated_at":{"TYPE":"str"},
+      "banner_type":{"TYPE":"int"},"system_type":{"TYPE":"int"}}
+
+}

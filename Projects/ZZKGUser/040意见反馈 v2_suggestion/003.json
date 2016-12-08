@@ -1,0 +1,3 @@
+{
+	"sql":["delete from so2o_suggestion where user_id = {{key.id}}"]
+}

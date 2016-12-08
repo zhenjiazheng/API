@@ -1,0 +1,13 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/coupongroup/list",
+		"headers": {
+			"token": "{{key.token}}",
+			"region":4
+		},
+		"regionId":4
+	},
+	"output": {"type":"list"}
+}

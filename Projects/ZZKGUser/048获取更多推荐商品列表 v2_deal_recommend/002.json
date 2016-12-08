@@ -1,0 +1,14 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/deal/recommend",
+		"headers": {
+			"token": "{{key.token}}",
+			"region":4
+		}
+	},
+	"output": {
+		"data": {"type":"list","ll":8}
+	}
+}

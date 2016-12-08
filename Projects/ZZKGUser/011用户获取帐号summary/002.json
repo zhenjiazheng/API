@@ -1,0 +1,21 @@
+{
+	"input": {
+		"method": "GET",
+		"url": "{{pre.zzkg_url}}",
+		"rest": "v2/account/summary",
+		"headers": {
+			"token": "{{key.token}}"
+		}
+	},
+	"output": {	"balance": {"EQ":0.0},
+	"points": {"EQ":0},
+	"myCouponCounts": {"EQ":0},
+	"myGrouponCounts": {"EQ":0},
+	"waitPayOrderCounts": {"EQ":0},
+	"waitDeliverOrderCounts": {"EQ":0},
+	"waitReceivingOrderCounts": {"EQ":0},
+	"waitCommentOrderCounts": {"EQ":0},
+	"waitRefundCounts": {"EQ":0},
+	"unReadMessageCounts": {"EQ":0},
+	"profileBg": {"EQ":"http://image.thy360.com/images/advertising/bg_profile.jpg"}}
+}
